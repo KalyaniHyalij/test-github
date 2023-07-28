@@ -1,9 +1,11 @@
-Jenkinsfile (Declarative Pipeline)
-pipeline {
-    agent none
+ pipeline {
+    agent any
+
     stages {
-        stage('Test') {
-            echo 'Hello World'
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
         }
     }
 }
